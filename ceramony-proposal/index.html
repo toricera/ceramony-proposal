@@ -12,13 +12,13 @@
   font-weight: 400;
   font-style: normal;
 }
-:root{--dk:#28100a;--cl:#502108;--mu:#8a6a5a;--ln:#e0dfcc;--cr:#e8e3d8;--bd:#c4b8a8;}
+:root{, dk:#28100a;, cl:#502108;, mu:#8a6a5a;, ln:#e0dfcc;, cr:#e8e3d8;, bd:#c4b8a8;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html,body{width:100%;height:100%;overflow:hidden;background:#1a0e08;font-family:'OrpheusPro',Georgia,serif;}
 .wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;}
 .book{position:relative;width:min(480px,88vw);height:min(680px,94vh);perspective:2400px;}
 .book::after{content:"";position:absolute;bottom:-16px;left:8%;width:84%;height:26px;background:rgba(0,0,0,0.5);filter:blur(16px);border-radius:50%;}
-.page{position:absolute;inset:0;background:var(--cr);transform-origin:left center;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.645,.045,.355,1);backface-visibility:hidden;border-radius:1px 3px 3px 1px;overflow:hidden;box-shadow:2px 0 10px rgba(0,0,0,.3);}
+.page{position:absolute;inset:0;background:var(, cr);transform-origin:left center;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.645,.045,.355,1);backface-visibility:hidden;border-radius:1px 3px 3px 1px;overflow:hidden;box-shadow:2px 0 10px rgba(0,0,0,.3);}
 .page.flipped{transform:rotateY(-180deg);z-index:20!important;}
 .page:nth-child(1){z-index:14;}.page:nth-child(2){z-index:13;}.page:nth-child(3){z-index:12;}
 .page:nth-child(4){z-index:11;}.page:nth-child(5){z-index:10;}.page:nth-child(6){z-index:9;}
@@ -48,7 +48,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#1a0e08;font-family:
 .split2 .phs{width:44%;flex-shrink:0;display:flex;flex-direction:column;}
 .split2 .phs .p{flex:1;overflow:hidden;}
 .split2 .phs .p img{width:100%;height:100%;object-fit:cover;}
-.split2 .phs .p+.p{border-top:2px solid var(--cr);}
+.split2 .phs .p+.p{border-top:2px solid var(, cr);}
 .split2 .tx{flex:1;padding:30px 22px 22px 20px;display:flex;flex-direction:column;overflow:hidden;}
 
 /* TOP IMAGE */
@@ -66,7 +66,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#1a0e08;font-family:
 .fb .inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;gap:10px;}
 .fb .fl{font-family:'Jost',sans-serif;font-size:7px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.28);}
 .fb h2{font-family:'OrpheusPro',Georgia,serif;font-size:clamp(32px,7vw,46px);font-weight:400;font-style:italic;color:#fff;line-height:1.1;}
-.fb .fr{width:26px;height:1px;background:var(--cl);}
+.fb .fr{width:26px;height:1px;background:var(, cl);}
 .fb .fs{font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);}
 
 /* FINAL DARK */
@@ -82,35 +82,35 @@ html,body{width:100%;height:100%;overflow:hidden;background:#1a0e08;font-family:
 .final .qt{font-family:'OrpheusPro',Georgia,serif;font-size:10px;font-style:italic;color:rgba(255,255,255,.22);}
 
 /* TYPO */
-.lbl{font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mu);margin-bottom:5px;}
-.rule{width:28px;height:1px;background:var(--cl);margin:7px 0 12px;}
-.fr{width:100%;height:1px;background:var(--bd);margin:10px 0;}
-h2.h{font-family:'OrpheusPro',Georgia,serif;font-size:clamp(20px,4.2vw,27px);font-weight:400;color:var(--dk);line-height:1.15;}
+.lbl{font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:.24em;text-transform:uppercase;color:var(, mu);margin-bottom:5px;}
+.rule{width:28px;height:1px;background:var(, cl);margin:7px 0 12px;}
+.fr{width:100%;height:1px;background:var(, bd);margin:10px 0;}
+h2.h{font-family:'OrpheusPro',Georgia,serif;font-size:clamp(20px,4.2vw,27px);font-weight:400;color:var(, dk);line-height:1.15;}
 p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;color:#3a2218;margin-top:8px;}
-.pgn{font-family:'Jost',sans-serif;font-size:7px;color:var(--bd);letter-spacing:.15em;margin-top:auto;padding-top:8px;}
+.pgn{font-family:'Jost',sans-serif;font-size:7px;color:var(, bd);letter-spacing:.15em;margin-top:auto;padding-top:8px;}
 
 /* LISTS */
 .nlist{margin-top:10px;display:flex;flex-direction:column;}
-.ni{display:flex;gap:9px;padding:7px 0;border-bottom:1px solid var(--bd);}
+.ni{display:flex;gap:9px;padding:7px 0;border-bottom:1px solid var(, bd);}
 .ni:last-child{border-bottom:none;}
-.nn{font-family:'Jost',sans-serif;font-size:8px;color:var(--mu);padding-top:2px;flex-shrink:0;width:16px;}
-.nc h4{font-family:'OrpheusPro',Georgia,serif;font-size:14px;font-weight:400;color:var(--cl);}
+.nn{font-family:'Jost',sans-serif;font-size:8px;color:var(, mu);padding-top:2px;flex-shrink:0;width:16px;}
+.nc h4{font-family:'OrpheusPro',Georgia,serif;font-size:14px;font-weight:400;color:var(, cl);}
 .nc p{font-family:'OrpheusPro',Georgia,serif;font-size:10px;line-height:1.55;color:#3a2218;}
 .tlist{margin-top:8px;display:flex;flex-direction:column;}
-.ti{padding:7px 0;border-bottom:1px solid var(--bd);}
+.ti{padding:7px 0;border-bottom:1px solid var(, bd);}
 .ti:last-child{border-bottom:none;}
 .th{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px;}
-.th h4{font-family:'OrpheusPro',Georgia,serif;font-size:14px;font-weight:400;color:var(--dk);}
-.th .tm{font-family:'Jost',sans-serif;font-size:8px;color:var(--mu);}
+.th h4{font-family:'OrpheusPro',Georgia,serif;font-size:14px;font-weight:400;color:var(, dk);}
+.th .tm{font-family:'Jost',sans-serif;font-size:8px;color:var(, mu);}
 .ti p{font-family:'OrpheusPro',Georgia,serif;font-size:10px;line-height:1.55;color:#3a2218;}
 .alist{display:flex;flex-direction:column;margin-top:9px;}
-.ai{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--bd);align-items:flex-start;}
+.ai{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(, bd);align-items:flex-start;}
 .ai:last-child{border-bottom:none;}
-.ak{font-family:'Jost',sans-serif;font-size:7px;letter-spacing:.08em;text-transform:uppercase;color:var(--cl);min-width:80px;padding-top:2px;flex-shrink:0;}
+.ak{font-family:'Jost',sans-serif;font-size:7px;letter-spacing:.08em;text-transform:uppercase;color:var(, cl);min-width:80px;padding-top:2px;flex-shrink:0;}
 .av{font-family:'OrpheusPro',Georgia,serif;font-size:11px;color:#3a2218;line-height:1.55;}
 .blist{margin-top:6px;display:flex;flex-direction:column;gap:4px;list-style:none;}
-.blist li{font-family:'OrpheusPro',Georgia,serif;font-size:11px;line-height:1.5;color:var(--mu);padding-left:12px;position:relative;}
-.blist li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--cl);}
+.blist li{font-family:'OrpheusPro',Georgia,serif;font-size:11px;line-height:1.5;color:var(, mu);padding-left:12px;position:relative;}
+.blist li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:1px;background:var(, cl);}
 
 /* NAV */
 .nav{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:13px;z-index:100;}
@@ -119,14 +119,14 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
 .nb:disabled{opacity:.13;cursor:default;}
 .dots{display:flex;gap:4px;align-items:center;}
 .dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.14);cursor:pointer;transition:all .2s;}
-.dot.active{background:var(--ln);width:11px;border-radius:2px;}
+.dot.active{background:var(, ln);width:11px;border-radius:2px;}
 .hint{position:fixed;top:18px;right:18px;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:.13em;color:rgba(255,255,255,.14);text-transform:uppercase;}
 </style>
 </head>
 <body>
 <div class="wrap"><div class="book" id="book">
 
-<!-- P1 COVER -->
+<!, P1 COVER, >
 <div class="page cover" id="p1">
   <div class="bg"></div><div class="tint"></div><div class="warm"></div>
   <div class="inner">
@@ -139,7 +139,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P2 -->
+<!, P2, >
 <div class="page" id="p2">
   <div class="split">
     <div class="ph"><img src="img/hands.png" alt=""></div>
@@ -155,7 +155,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P3 -->
+<!, P3, >
 <div class="page" id="p3">
   <div style="display:flex;flex-direction:column;height:100%;">
     <div class="topimg"><img src="img/cups1.png" alt=""></div>
@@ -170,13 +170,13 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P4 -->
+<!, P4, >
 <div class="page" id="p4">
   <div class="tpage">
-    <div class="lbl">CERÃMONY</div>
+    <div class="lbl">CERÃÂMONY</div>
     <h2 class="h">Where It Lives.</h2>
     <div class="rule"></div>
-    <p class="b">CERÃMONY exists within this shift, offering something that sits between creativity, wellness, and connection. Our gathering brings together movement, mindfulness, and clay in one intimate space, facilitating a beautiful calm environment for like-minded people to gather and connect.</p>
+    <p class="b">CERÃÂMONY exists within this shift, offering something that sits between creativity, wellness, and connection. Our gathering brings together movement, mindfulness, and clay in one intimate space, facilitating a beautiful calm environment for like-minded people to gather and connect.</p>
     <p class="b">Sessions may include breathwork, guided movement, meditation, or stillness, creating a transition out of the pace of the day. From there, the experience moves into clay play around a shared table.</p>
     <div class="fr" style="margin-top:13px;"></div>
     <div class="nlist">
@@ -188,7 +188,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P5 interstitial -->
+<!, P5 interstitial, >
 <div class="page fb" id="p5">
   <div class="bg" style="background-image:url('img/dark1.png');"></div>
   <div class="warm"></div>
@@ -200,7 +200,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P6 -->
+<!, P6, >
 <div class="page" id="p6">
   <div class="split2">
     <div class="phs">
@@ -211,33 +211,33 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
       <div class="lbl">The Collective</div>
       <h2 class="h" style="font-size:clamp(17px,3.5vw,21px);">Built Around<br>Practitioners</h2>
       <div class="rule"></div>
-      <p class="b" style="font-size:10.5px;">CERÃMONY is built as a collective-led experience. Each gathering is shaped in collaboration with wellness practitioners across Dubai including breathwork facilitators, movement and pilates instructors, and meditation guides.</p>
+      <p class="b" style="font-size:10.5px;">CERÃÂMONY is built as a collective-led experience. Each gathering is shaped in collaboration with wellness practitioners across Dubai including breathwork facilitators, movement and pilates instructors, and meditation guides.</p>
       <p class="b" style="font-size:10.5px;">These practitioners lead the opening of each session, guiding guests through breathwork, movement, or stillness before transitioning into clay.</p>
       <div class="fr" style="margin-top:8px;"></div>
-      <p class="b" style="font-size:10.5px;margin-top:0;">Alongside the collective, CERÃMONY draws from an existing TORICERÃ community, an engaged audience that has grown organically online. The intention is to bring that community into a physical space, creating connection not just digitally, but in real life.</p>
+      <p class="b" style="font-size:10.5px;margin-top:0;">Alongside the collective, CERÃÂMONY draws from an existing TORICERÃÂ community, an engaged audience that has grown organically online. The intention is to bring that community into a physical space, creating connection not just digitally, but in real life.</p>
       <div class="pgn">06</div>
     </div>
   </div>
 </div>
 
-<!-- P7 -->
+<!, P7, >
 <div class="page" id="p7">
   <div class="split">
     <div class="ph"><img src="img/cups1.png" alt="" style="object-position:center top;"></div>
     <div class="tx">
-      <div class="lbl">About TORICERÃÂ</div>
+      <div class="lbl">About TORICERÃÂÃÂ</div>
       <h2 class="h">The Studio<br>Behind It</h2>
       <div class="rule"></div>
-      <p class="b">TORICERÃ is a Dubai-born ceramics brand, currently housed in a home atelier. A maker-led studio with an organic international audience and an active client base spanning individuals, hospitality, and lifestyle brands.</p>
+      <p class="b">TORICERÃÂ is a Dubai-born ceramics brand, currently housed in a home atelier. A maker-led studio with an organic international audience and an active client base spanning individuals, hospitality, and lifestyle brands.</p>
       <p class="b">Built slowly through craft, consistency, and a strong sense of identity.</p>
       <div class="fr"></div>
-      <p class="b" style="font-style:italic;color:var(--cl);">CERÃMONY is a natural extension of TORICERÃ, an evolution from object to experience. From pieces made to be held, to moments created to be shared.</p>
+      <p class="b" style="font-style:italic;color:var(, cl);">CERÃÂMONY is a natural extension of TORICERÃÂ, an evolution from object to experience. From pieces made to be held, to moments created to be shared.</p>
       <div class="pgn">07</div>
     </div>
   </div>
 </div>
 
-<!-- P8 -->
+<!, P8, >
 <div class="page" id="p8">
   <div class="tpage">
     <div class="lbl">The Experience</div>
@@ -253,7 +253,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
   </div>
 </div>
 
-<!-- P9 -->
+<!, P9, >
 <div class="page" id="p9">
   <div class="tpage">
     <div class="lbl">Programme Details</div>
@@ -261,49 +261,49 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
     <div class="rule"></div>
     <p class="b" style="font-size:11px;">A four-week programme of intimate, small-group sessions.</p>
     <div class="alist">
-      <div class="ai"><div class="ak">Format</div><div class="av">1 to 2 sessions per week, 8 guests per session Â· Each session approximately 2.5 to 3 hours — though we are open to Alserkal's suggestions regarding frequency and format.</div></div>
-      <div class="ai"><div class="ak">Structure</div><div class="av">Open &amp; Ground &nbsp;Â·&nbsp; Clay Play &nbsp;Â·&nbsp; Communal Table</div></div>
+      <div class="ai"><div class="ak">Format</div><div class="av">1 to 2 sessions per week, 8 guests per session ÃÂ· Each session approximately 2.5 to 3 hours â though we are open to Alserkal's suggestions regarding frequency and format.</div></div>
+      <div class="ai"><div class="ak">Structure</div><div class="av">Open &amp; Ground &nbsp;ÃÂ·&nbsp; Clay Play &nbsp;ÃÂ·&nbsp; Communal Table</div></div>
       <div class="ai"><div class="ak">Collaborators</div><div class="av">Each session features a rotating wellness practitioner (breathwork, movement, meditation)</div></div>
-      <div class="ai"><div class="ak">Public Activation</div><div class="av">Each session is documented and shared across TORICERÃ's audience</div></div>
-      <div class="ai"><div class="ak">Extended Activation</div><div class="av">We would love to host a TORICERÃ pop-up, allowing guests to experience and purchase the work in a physical setting. A temporary showroom that extends the experience beyond the sessions.</div></div>
+      <div class="ai"><div class="ak">Public Activation</div><div class="av">Each session is documented and shared across TORICERÃÂ's audience</div></div>
+      <div class="ai"><div class="ak">Extended Activation</div><div class="av">We would love to host a TORICERÃÂ pop-up, allowing guests to experience and purchase the work in a physical setting. A temporary showroom that extends the experience beyond the sessions.</div></div>
     </div>
     <div class="pgn">09</div>
   </div>
 </div>
 
-<!-- P10 -->
+<!, P10, >
 <div class="page" id="p10">
   <div class="tpage">
     <div class="lbl">Why This Fits Alserkal</div>
     <h2 class="h">The Right Home.<br>The Right Moment.</h2>
     <div class="rule"></div>
-    <p class="b" style="font-size:11px;">Alserkal is built around a community that values culture, design, and considered experiences. CERÃMONY speaks directly to that audience, creatives, founders, and individuals already seeking slower, more intentional ways of engaging with the city.</p>
-    <p class="b" style="font-size:11px;">As wellness continues to grow in Dubai, there is a clear gap for experiences that go beyond passive participation. CERÃMONY facilitates that space, bringing together making, mindfulness, and connection in one intimate format.</p>
+    <p class="b" style="font-size:11px;">Alserkal is built around a community that values culture, design, and considered experiences. CERÃÂMONY speaks directly to that audience, creatives, founders, and individuals already seeking slower, more intentional ways of engaging with the city.</p>
+    <p class="b" style="font-size:11px;">As wellness continues to grow in Dubai, there is a clear gap for experiences that go beyond passive participation. CERÃÂMONY facilitates that space, bringing together making, mindfulness, and connection in one intimate format.</p>
     <p class="b" style="font-size:11px;">It offers a different kind of gathering, one that encourages presence, participation, and genuine interaction. A softer, more considered layer within the existing landscape of exhibitions, talks, and retail.</p>
     <div class="pgn">10</div>
   </div>
 </div>
 
-<!-- P11 -->
+<!, P11, >
 <div class="page" id="p11">
   <div class="tpage">
     <div class="lbl">The Ask</div>
-    <h2 class="h">CERÃMONY is Ready<br>to be Brought to Life.</h2>
+    <h2 class="h">CERÃÂMONY is Ready<br>to be Brought to Life.</h2>
     <div class="rule"></div>
     <p class="b" style="font-size:11px;">We are seeking a space within Alserkal Avenue to host a four-week programme of intimate, collective-led gatherings.</p>
     <div class="fr" style="margin-top:12px;"></div>
-    <p class="b" style="font-size:10.5px;font-style:italic;color:var(--mu);">What we are asking for</p>
+    <p class="b" style="font-size:10.5px;font-style:italic;color:var(, mu);">What we are asking for</p>
     <ul class="blist" style="margin-top:6px;">
       <li>A space to host the programme</li>
       <li>Support in communicating the programme through Alserkal's channels</li>
     </ul>
     <div class="fr" style="margin-top:12px;"></div>
-    <p class="b" style="font-size:11px;">In return, CERÃMONY offers a considered form of cultural programming, one that brings people together through shared experience, and introduces a new, more tactile way of engaging with the space.</p>
+    <p class="b" style="font-size:11px;">In return, CERÃÂMONY offers a considered form of cultural programming, one that brings people together through shared experience, and introduces a new, more tactile way of engaging with the space.</p>
     <div class="pgn">11</div>
   </div>
 </div>
 
-<!-- P12 CLOSING -->
+<!, P12 CLOSING, >
 <div class="page final" id="p12">
   <div class="bg" style="background-image:url('img/final.png');"></div>
   <div class="warm"></div>
@@ -311,7 +311,7 @@ p.b{font-family:'OrpheusPro',Georgia,serif;font-size:11.5px;line-height:1.72;col
     <div class="fl">Get in Touch</div>
     <div>
       <h2>We Would Be<br>Honoured.</h2>
-      <p class="sub">to bring C CERÃMONY to Alserkal Avenue.</p>
+      <p class="sub">to bring C CERÃÂMONY to Alserkal Avenue.</p>
     </div>
     <p class="newline">We have the audience, the reputation, and the product.<br>Now we need a home to bring it to life.</p>
     <div class="ct">info@toricera.com<br>toricera.com<br>@toricera.studio</div>
@@ -335,7 +335,7 @@ for(let i=1;i<=TOTAL;i++){const d=document.createElement('div');d.className='dot
 function go(n){
   if(n<1||n>TOTAL)return;
   if(n>cur)for(let i=cur;i<n;i++)pages[i-1].classList.add('flipped');
-  else for(let i=cur-1;i>=n;i--)pages[i-1].classList.remove('flipped');
+  else for(let i=cur-1;i>=n;i, )pages[i-1].classList.remove('flipped');
   cur=n;
   document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i+1===cur));
   document.getElementById('prev').disabled=cur===1;
